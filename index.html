@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio de Renders Arquitectónicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>Bienvenido a Nuestro Estudio de Renders Arquitectónicos</h1>
+        <p>Transformamos tus ideas en realidad visual.</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <img src="assets/images/proyecto1.jpg" alt="Proyecto 1">
+            <p>Descripción del Proyecto 1</p>
+        </div>
+        <div class="proyecto">
+            <img src="assets/images/proyecto2.jpg" alt="Proyecto 2">
+            <p>Descripción del Proyecto 2</p>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Renderizado 3D</li>
+            <li>Animaciones Arquitectónicas</li>
+            <li>Diseño de Interiores</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Estudio de Renders Arquitectónicos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
