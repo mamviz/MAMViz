@@ -10,31 +10,30 @@ body {
     min-height: 100vh;
 }
 
-/* Encabezado y Navegación */
+/* Barra de Navegación (Header) */
 header {
     background-color: #ffffff;
-    width: 200px; /* Ancho de la barra de navegación */
+    width: 250px; /* Ancho de la barra de navegación */
     padding: 20px;
     border-right: 1px solid #e0e0e0;
     position: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 header h1 {
     font-size: 1.5rem;
     margin: 0 0 20px 0;
     font-weight: 600;
-    text-align: center;
 }
 
 header p {
     font-size: 1rem;
     color: #666666;
     margin: 0 0 40px 0;
-    text-align: center;
 }
 
 nav ul {
@@ -60,7 +59,7 @@ nav ul li a:hover {
 
 /* Contenido Principal */
 main {
-    margin-left: 240px; /* Espacio para la barra de navegación */
+    margin-left: 250px; /* Espacio para la barra de navegación */
     padding: 40px;
     flex-grow: 1;
 }
