@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAMViz - Estudio de Renders Arquitectónicos</title>
+    <title>MAMViz - Architectural Rendering Studio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,59 +11,57 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="inicio">
-        <h1>MAMViz</h1>
-        <p>Estudio de Renders Arquitectónicos</p>
-    </section>
+    <main>
+        <section id="home">
+            <h1>MAMViz</h1>
+            <p>Architectural Rendering Studio</p>
+        </section>
 
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="Casa Marindia">
-            <img src="assets/images/r1 f srgb.jpg" alt="Casa Marindia">
-            <img src="assets/images/r2 f srgb.jpg" alt="Casa Marindia">
-            <img src="assets/images/r3 f srgb.jpg" alt="Casa Marindia">
-            <p>Descripción del Proyecto 1</p>
-        </div>
-        <div class="Edificio Adamo Faiden 3312">
-            <img src="assets/images/CO1_Post.jpg" alt="Adamo Faiden">
-            <img src="assets/images/CO2_Post.jpg" alt="Adamo Faiden">
-            <img src="assets/images/CO3_Post.jpg" alt="Adamo Faiden">
-            <p>Descripción del Proyecto 2</p>
-        </div>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="assets/images/C01_Post.jpg" alt="Project 1">
+                <p>Description of Project 1</p>
+            </div>
+            <div class="project">
+                <img src="assets/images/project2.jpg" alt="Project 2">
+                <p>Description of Project 2</p>
+            </div>
+        </section>
 
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Renderizado 3D</li>
-            <li>Animaciones Arquitectónicas</li>
-            <li>Diseño de Interiores</li>
-        </ul>
-    </section>
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>3D Rendering</li>
+                <li>Architectural Animations</li>
+                <li>Interior Design</li>
+            </ul>
+        </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form action="enviar.php" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="send.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 MAMViz. Todos los derechos reservados.</p>
+        <p>&copy; 2023 MAMViz. All rights reserved.</p>
     </footer>
 </body>
 </html>
