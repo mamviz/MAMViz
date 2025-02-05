@@ -67,6 +67,7 @@ main {
 /* Secciones */
 section {
     margin-bottom: 60px;
+    scroll-margin-top: 20px; /* Ajuste para el scroll suave */
 }
 
 section h2 {
