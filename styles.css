@@ -77,10 +77,11 @@ section p {
     flex-direction: column;
     align-items: center; /* Centra horizontalmente */
     text-align: center; /* Centra el texto */
+    width: 100%; /* Ocupa el ancho completo */
 }
 
 .proyecto img {
-    max-width: 90%; /* Ajusta el ancho de la imagen */
+    max-width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
     height: auto;
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
@@ -91,6 +92,7 @@ section p {
     font-size: 1rem;
     color: #444444; /* Texto gris oscuro */
     max-width: 600px; /* Limita el ancho del texto */
+    padding: 0 20px; /* Añade un poco de padding lateral */
 }
 /* Formulario de Contacto */
 form {
