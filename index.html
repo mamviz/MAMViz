@@ -13,51 +13,91 @@
         <p>Building with pixels</p>
         <nav>
             <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects" onclick="loadSection('projects')">Projects</a></li>
+                <li><a href="#services" onclick="loadSection('services')">Services</a></li>
+                <li><a href="#contact" onclick="loadSection('contact')">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <img src="assets/images/C01_Post.jpg" alt="Project 1">
-                <p>Description of Project 1</p>
-            </div>
-            <div class="project">
-                <img src="assets/images/r1 f srgb.jpg" alt="Project 2">
-                <p>Description of Project 2</p>
-            </div>
-        </section>
-
-        <section id="services">
-            <h2>Services</h2>
-            <ul>
-                <li>3D Rendering</li>
-                <li>Architectural Animations</li>
-                <li>Interior Design</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="send.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
+    <main id="content">
+        <!-- Contenido dinámico se cargará aquí -->
     </main>
 
     <footer>
         <p>&copy; 2023 MAMVIZ. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Función para cargar secciones dinámicamente
+        function loadSection(sectionId) {
+            let content = '';
+            switch (sectionId) {
+                case 'projects':
+                    content = `
+                        <section id="projects">
+                            <h2>Projects</h2>
+                            <div class="project">
+                                <h3>Casa Marindia</h3>
+                                <img src="assets/images/r1_f_srgb.jpg" alt="Casa Marindia 1">
+                                <img src="assets/images/r2_f_srgb.jpg" alt="Casa Marindia 2">
+                                <img src="assets/images/r3_f_srgb.jpg" alt="Casa Marindia 3">
+                            </div>
+                            <div class="project">
+                                <h3>Edificio 11 de Septiembre 3312</h3>
+                                <img src="assets/images/C01_Post.jpg" alt="Edificio 1">
+                                <img src="assets/images/C02_Post.jpg" alt="Edificio 2">
+                                <img src="assets/images/C03_Post.jpg" alt="Edificio 3">
+                            </div>
+                            <div class="project">
+                                <h3>Cocina 1</h3>
+                                <img src="assets/images/a_Post.jpg" alt="Cocina 1 A">
+                                <img src="assets/images/d_Post.jpg" alt="Cocina 1 D">
+                            </div>
+                            <div class="project">
+                                <h3>Cocina 2</h3>
+                                <img src="assets/images/C01_P.jpg" alt="Cocina 2 C01">
+                                <img src="assets/images/C02_P.jpg" alt="Cocina 2 C02">
+                            </div>
+                        </section>
+                    `;
+                    break;
+                case 'services':
+                    content = `
+                        <section id="services">
+                            <h2>Services</h2>
+                            <ul>
+                                <li>3D Rendering</li>
+                                <li>Architectural Animations</li>
+                                <li>Interior Design</li>
+                            </ul>
+                        </section>
+                    `;
+                    break;
+                case 'contact':
+                    content = `
+                        <section id="contact">
+                            <h2>Contact</h2>
+                            <form action="send.php" method="post">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" required></textarea>
+                                <button type="submit">Send</button>
+                            </form>
+                        </section>
+                    `;
+                    break;
+            }
+            document.getElementById('content').innerHTML = content;
+        }
+
+        // Cargar la sección de proyectos por defecto al abrir la página
+        window.onload = function() {
+            loadSection('projects');
+        };
+    </script>
 </body>
 </html>
